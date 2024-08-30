@@ -80,7 +80,7 @@ img:hover{
 
 .butt{
     font-size:1.5rem;
-    background-color: #395f64;
+    background-color: gray;
     color:white;
     padding:0.6rem;
     border-radius: 1.2rem;
@@ -121,7 +121,7 @@ img:hover{
 
 @media screen and (max-width: 600px){
     .heading{
-        font-size: 2.36rem;
+        font-size: 1.9rem;
         background-color: #224044;
         height: 6rem;
         line-height: 6rem;
@@ -163,29 +163,29 @@ img:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         gap:4rem;
         margin-top:2.6rem;
        }
        
        .compScore , .userScore{
        
-           font-size: 3.6rem;
+           font-size: 3rem;
            margin-top:0.5rem;
        }
        
        .buttons{
-        margin-top:4rem;
+        margin-top:3rem;
     }
 
     .butt{
         font-size:1.3rem;
-        background-color: #395f64;
+        background-color:gray;
         color:white;
         padding:0.6rem;
         border-radius: 1.2rem;
-        padding-left: 1rem;
-        padding-right:1rem; 
+        padding-left: 1.5rem;
+        padding-right:1.5rem; 
         border:none;
         box-shadow: 0 4px 8px rgb(0, 0, 0 , 0.6);
         margin-left: 0.5rem;
@@ -199,15 +199,18 @@ img:hover{
         cursor:pointer;
     }
     .mainMess{
-        margin-top:4rem;
+        margin-top:3rem;
     }
     .mess{
         color:white;
         padding:0.5rem;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         padding:1.4rem;
     
+    }
+    img:hover{
+        border:none;
     }
     
     

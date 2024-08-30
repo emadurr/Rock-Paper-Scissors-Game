@@ -97,6 +97,7 @@ choices.forEach((box)=>{
         playAgain.disabled = false;
         playAgain.classList.add("class" , "hov"); 
         disable();
+        playAgain.style.backgroundColor="#395f64";
         playAgain.innerText="Click for computer choice";
     }) 
     
@@ -116,6 +117,7 @@ playAgain.addEventListener("click" , ()=>{
     else{
     clearScore.classList.add("class" , "hide");
     playAgain.innerText = "Select any item";
+    playAgain.style.backgroundColor = "gray";
     playAgain.disabled = true ;
     playAgain.classList.remove("class" , "hov"); 
     x=true;
