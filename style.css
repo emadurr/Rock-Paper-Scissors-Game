@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     text-align: center;
+
 }
 
 .heading{
@@ -232,7 +234,10 @@ img:hover{
 }
 
 .extra{
-    background-color: rgb(133, 133, 133);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0 , 0.4);
 }
 
 .setting{
@@ -275,4 +280,64 @@ img:hover{
 .audio{
     width:15rem;
     height:2rem;
+    border:1.5px solid rgb(91, 156, 255);
+    border-radius: 2rem;
+}
+
+
+/* ------------------------- about */
+
+.aboutMain{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.aboutDiv{
+    border-radius: 50px;
+    position: fixed;
+    margin-top: 6.4rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0 , 0.4);
+
+
+}
+
+.aboutMess{
+    color:rgb(0, 0, 0);
+    padding:4rem;
+    font-size: 1.5rem;
+}
+
+
+
+.cross{
+    position: fixed;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    color:rgb(255, 0, 0);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 12px;
+    font-size:2.9rem;
+    line-height: 1px;
+    border: none;
+    
+}
+
+.cross:hover{
+    background-color: rgb(255, 255, 255);
+}
+.cross:active{
+    background-color: rgb(46, 46, 46);
+}
+
+
+.hideDiv{
+display: none;
 }

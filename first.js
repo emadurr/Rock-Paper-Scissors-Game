@@ -17,6 +17,8 @@ let about = document.querySelector(".about");
 let audio = document.querySelector(".audio");
 let body = document.querySelector("body");
 let img = document.querySelectorAll("img");
+let aboutDiv = document.querySelector(".aboutDiv");
+let cross = document.querySelector(".cross");
 
 
 
@@ -138,6 +140,7 @@ choices.forEach((box)=>{
             playAgain.style.backgroundColor="#395f64";
             playAgain.innerText="Click for Player 2 turn";
             x=2;
+            
         }
         else if( turn === 3){
             compChoice = box.getAttribute("id");
@@ -163,7 +166,7 @@ choices.forEach((box)=>{
 
 
     playAgain.addEventListener("click" , ()=>{
-
+        mess.innerText ="";
         mainMode.classList.remove("class" , "extra");
         mode.classList.add("class" , "hideMode");
         dark.classList.add("class" , "hideMode");
@@ -279,6 +282,7 @@ setting.addEventListener("click" , ()=>{
 
 
 mode.addEventListener("click" , ()=>{
+    mess.innerText ="";
    if(otherMode === true){
       otherMode = false;
         console.log("this is tru");
@@ -358,4 +362,20 @@ dark.addEventListener("click" , ()=>{
         darkNum = 1;
         dark.innerText = "Dark Theme";
     }
+})
+
+about.addEventListener("click" , ()=>{
+    aboutDiv.classList.remove("class" , "hideDiv");
+    mainMode.classList.remove("class" , "extra");
+    mode.classList.add("class" , "hideMode");
+    dark.classList.add("class" , "hideMode");
+    about.classList.add("class" , "hideMode");
+    audio.classList.add("class" , "hideMode"); 
+    settingNum = 0;
+    setting.disabled=true;
+})
+
+cross.addEventListener("click" , ()=>{
+    aboutDiv.classList.add("class" , "hideDiv");
+    setting.disabled=false;
 })
