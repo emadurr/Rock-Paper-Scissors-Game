@@ -363,7 +363,7 @@ display: none;
     .setting{
         width:2.5rem;
         height:1.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.5rem;
         border-radius: 0.6rem;
         background-color: rgb(218, 218, 218);
@@ -374,7 +374,7 @@ display: none;
         padding-left:8px;
         padding-right:8px;
         height:1.5rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         border-radius: 0.8rem;
         background-color: rgb(57, 176, 255 , 0.8);
         color:white
