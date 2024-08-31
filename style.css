@@ -225,7 +225,6 @@ img:hover{
     display:flex;
     flex-direction:column;
     gap:0.5rem;
-   
     height:max-content;
     width:max-content;
     padding:0.3rem;
@@ -253,8 +252,8 @@ img:hover{
     background-color: rgb(101, 101, 101);
 }
 
-.mode{
-    width:7.2rem;
+.on{
+    width:15rem;
     height:2.14rem;
     font-size: 1rem;
     border-radius: 0.6rem;
@@ -262,13 +261,18 @@ img:hover{
     color:white
 
 }
-.mode:hover{
+.on:hover{
     background-color: rgb(9, 156, 255);
 }
-.mode:active{
+.on:active{
     background-color: rgb(62, 62, 62);
 }
 
 .hideMode{
     display: none;
+}
+
+.audio{
+    width:15rem;
+    height:2rem;
 }

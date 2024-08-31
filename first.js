@@ -12,6 +12,12 @@ let setting = document.querySelector(".setting");
 let mode = document.querySelector(".mode");
 let compName = document.querySelector(".compName");
 let userName = document.querySelector(".userName");
+let dark = document.querySelector(".dark");
+let about = document.querySelector(".about");
+let audio = document.querySelector(".audio");
+let body = document.querySelector("body");
+let img = document.querySelectorAll("img");
+
 
 
 let uScore = 0;
@@ -23,6 +29,7 @@ playAgain.disabled = true;
 let settingNum = 0 ;
 let otherMode = true;
 let turn = 1;
+let darkNum = 1;
 
 
 
@@ -103,6 +110,9 @@ choices.forEach((box)=>{
         
         mainMode.classList.remove("class" , "extra");
         mode.classList.add("class" , "hideMode");
+        dark.classList.add("class" , "hideMode");
+        about.classList.add("class" , "hideMode");
+        audio.classList.add("class" , "hideMode"); 
         settingNum = 0;
 
 
@@ -156,6 +166,9 @@ choices.forEach((box)=>{
 
         mainMode.classList.remove("class" , "extra");
         mode.classList.add("class" , "hideMode");
+        dark.classList.add("class" , "hideMode");
+        about.classList.add("class" , "hideMode");
+        audio.classList.add("class" , "hideMode"); 
         settingNum = 0;
 
 
@@ -247,12 +260,18 @@ let showWin2 = (userWin)=>{
 setting.addEventListener("click" , ()=>{
     if(settingNum === 0){
     mainMode.classList.add("class" , "extra");
-    mode.classList.remove("class" , "hideMode")
+    mode.classList.remove("class" , "hideMode");
+    dark.classList.remove("class" , "hideMode");
+    about.classList.remove("class" , "hideMode");
+    audio.classList.remove("class" , "hideMode"); 
     settingNum = 1;
     }
     else{
         mainMode.classList.remove("class" , "extra");
-        mode.classList.add("class" , "hideMode")
+        mode.classList.add("class" , "hideMode");
+        dark.classList.add("class" , "hideMode");
+        about.classList.add("class" , "hideMode");
+        audio.classList.add("class" , "hideMode"); 
         settingNum = 0;
     }
 
@@ -309,4 +328,34 @@ mode.addEventListener("click" , ()=>{
     enable();
     mess.style.backgroundColor = "transparent";
    }
+})
+
+// ----------------------------dark and buttons
+
+dark.addEventListener("click" , ()=>{
+    if(darkNum === 1){
+        body.style.backgroundColor = "black";
+        compScore.style.color = "white";
+        userScore.style.color = "white";
+        compName.style.color = "white"; 
+        userName.style.color = "white"; 
+        img.forEach((i)=>{
+            i.style.border = "1.5px solid white";
+        }); 
+        darkNum = 2; 
+        dark.innerText = "Light Theme";
+    }
+
+    else{
+        body.style.backgroundColor = "white";
+        compScore.style.color = "black";
+        userScore.style.color = "black";
+        compName.style.color = "black"; 
+        userName.style.color = "black"; 
+        img.forEach((i)=>{
+            i.style.border = "1px solid black";
+        }); 
+        darkNum = 1;
+        dark.innerText = "Dark Theme";
+    }
 })
