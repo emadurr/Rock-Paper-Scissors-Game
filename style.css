@@ -364,17 +364,17 @@ display: none;
         width:2.5rem;
         height:1.5rem;
         font-size: 1rem;
-        line-height: 1.5rem;
+        line-height: 0.3rem;
         border-radius: 0.6rem;
         background-color: rgb(218, 218, 218);
     }
 
     .on{
         width:max-content;
-        padding-left:8px;
-        padding-right:8px;
+        padding-left:8.5px;
+        padding-right:8.5px;
         height:1.5rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         border-radius: 0.8rem;
         background-color: rgb(57, 176, 255 , 0.8);
         color:white
