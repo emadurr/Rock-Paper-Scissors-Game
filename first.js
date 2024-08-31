@@ -53,7 +53,7 @@ let showWin = (userWin)=>{
         cScore++;
         compScore.innerText = cScore;
         mess.innerText = "You Lost, computer '" + compChoice + "' beats your '" + userChoice +"'." ;
-        mess.style.backgroundColor = "rgb(255, 58, 58)";
+        mess.style.backgroundColor = "rgb(255, 90, 90)";
 
     }
     else{
@@ -245,7 +245,7 @@ let showWin2 = (userWin)=>{
         cScore++;
         compScore.innerText = cScore;
         mess.innerText = "Player1 Lost, P2 '" + compChoice + "' beats P1 '" + userChoice +"'." ;
-        mess.style.backgroundColor = "rgb(255, 58, 58)";
+        mess.style.backgroundColor = "rgb(255, 90, 90)";
 
     }
     else{
@@ -253,7 +253,7 @@ let showWin2 = (userWin)=>{
         uScore++;
         userScore.innerText = uScore;
         mess.innerText = "Player1 Won! P1 '" +  userChoice + "' beats P2 '" + compChoice+"'.";
-         mess.style.backgroundColor = "rgb(78, 255, 87)";
+         mess.style.backgroundColor = " rgb(118, 255, 173)";
 
     }
 }
