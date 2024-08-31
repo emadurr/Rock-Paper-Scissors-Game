@@ -260,8 +260,9 @@ img:hover{
     width:15rem;
     height:2.14rem;
     font-size: 1rem;
-    border-radius: 0.6rem;
-    background-color: rgb(57, 176, 255);
+    border-radius: 1rem;
+    background-color: rgb(57, 176, 255 , 0.8);
+  
     color:white
 
 }
@@ -374,8 +375,8 @@ display: none;
         padding-right:8px;
         height:1.5rem;
         font-size: 1rem;
-        border-radius: 0.6rem;
-        background-color: rgb(57, 176, 255);
+        border-radius: 0.8rem;
+        background-color: rgb(57, 176, 255 , 0.8);
         color:white
     
     }
