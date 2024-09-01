@@ -392,3 +392,4 @@ cross.addEventListener("click" , ()=>{
     aboutDiv.classList.add("class" , "hideDiv");
     setting.disabled=false;
 })
+
