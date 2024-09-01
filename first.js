@@ -100,7 +100,7 @@ let disable = ()=>{
 let enable = ()=>{
     for(let jor of choices){
         jor.style.pointerEvents ="";
-        jor.style.backgroundColor="transparent";
+        jor.style.backgroundColor="";
     }
 };
 
@@ -131,7 +131,7 @@ choices.forEach((box)=>{
         }
         else if(turn === 2){
             userChoice = box.getAttribute("id");
-            console.log("you clicked" , userChoice);
+            // console.log("you clicked" , userChoice);
             
             box.style.backgroundColor= "pink"
             playAgain.disabled = false;
@@ -348,6 +348,13 @@ dark.addEventListener("click" , ()=>{
         }); 
         darkNum = 2; 
         dark.innerText = "Light Theme";
+
+        
+        choices.forEach((ld)=>{
+            ld.classList.remove("class" , "choiceL");
+            ld.classList.add("class" , "choiceD");
+        })
+       
     }
 
     else{
@@ -361,6 +368,12 @@ dark.addEventListener("click" , ()=>{
         }); 
         darkNum = 1;
         dark.innerText = "Dark Theme";
+
+
+        choices.forEach((ld)=>{
+            ld.classList.remove("class" , "choiceD");
+            ld.classList.add("class" , "choiceL");
+        })
     }
 })
 

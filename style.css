@@ -27,9 +27,13 @@ body{
     align-items: center;
 }
 
-.choice:hover{
-    /* background-color: rgb(50, 53, 76); */
+.choiceL:hover{
+    background-color: rgb(50, 53, 76);
     opacity:0.8;
+}
+
+.choiceD:hover{
+    background-color: rgb(255, 255, 255);
 }
 
 .boxclick:hover{
@@ -50,9 +54,9 @@ img{
    
 }
 
-img:hover{
+/* img:hover{
     border:5px solid rgb(50, 53, 76);
-}
+} */
 
 .choices{
     display: flex;
